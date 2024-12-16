@@ -1,0 +1,11 @@
+### 등록
+POST http://localhost:8080/hello/hello
+Content-Type: application/json
+
+{
+  "message": "테스트"
+}
+
+### 조회
+GET http://localhost:8080/hello/hello
+Content-Type: application/json
