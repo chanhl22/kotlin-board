@@ -13,6 +13,7 @@ class GrammarClass {
         val person1 = Person1("kotlin", 20)
         val person2 = Person2("kotlin", 20)
         val person3 = Person3("kotlin", 20)
+        val person4 = Person4("kotlin", 20)
 
         //when
         person1.age
@@ -24,6 +25,8 @@ class GrammarClass {
         assertThat(person2.age).isEqualTo(10)
         assertThat(person3.name).isEqualTo("kotlin")
         assertThat(person3.age).isEqualTo(20)
+        assertThat(person4.name).isEqualTo("kotlin")
+        assertThat(person4.age).isEqualTo(20)
     }
 
     @DisplayName("주 생성자에 var? val?")
@@ -77,6 +80,7 @@ class Person2(name: String, age: Int) {
         println("이름은? ${this.name}")
         println("이름은? $this.name")
     }
+
     init {
         println("2 ------")
         println("이름은? $name")
@@ -89,16 +93,26 @@ class Person3 constructor(val name: String, var age: Int) {
     // 클래스 본체
 }
 
+class Person4 {
+    var name: String = "spring"
+    var age: Int = 10
+
+    constructor(name: String, age: Int) {
+        this.name = name
+        this.age = age
+    }
+}
+
 class Prs(var name: String, var birth: Int) {
     fun addAge() {
         birth++
     }
 }
 
-class Character(name:String, hairColor:String, height:Double) {
-    var name:String = ""
-    var hairColor:String = ""
-    var height:Double = 0.0
+class Character(name: String, hairColor: String, height: Double) {
+    var name: String = ""
+    var hairColor: String = ""
+    var height: Double = 0.0
 
     init {
         println("$name $hairColor $height")
