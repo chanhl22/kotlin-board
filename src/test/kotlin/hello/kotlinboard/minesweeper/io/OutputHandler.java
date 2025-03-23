@@ -1,7 +1,7 @@
 package hello.kotlinboard.minesweeper.io;
 
-import cleancode.minesweeper.tobe.minesweeper.board.GameBoard;
-import cleancode.minesweeper.tobe.minesweeper.exception.GameException;
+import hello.kotlinboard.minesweeper.board.GameBoard;
+import hello.kotlinboard.minesweeper.exception.GameException;
 
 public interface OutputHandler {
 

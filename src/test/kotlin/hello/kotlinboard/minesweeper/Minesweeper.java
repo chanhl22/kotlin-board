@@ -1,12 +1,12 @@
 package hello.kotlinboard.minesweeper;
 
-import cleancode.minesweeper.tobe.minesweeper.board.GameBoard;
-import cleancode.minesweeper.tobe.minesweeper.board.position.CellPosition;
-import cleancode.minesweeper.tobe.minesweeper.config.GameConfig;
-import cleancode.minesweeper.tobe.minesweeper.exception.GameException;
-import cleancode.minesweeper.tobe.minesweeper.io.InputHandler;
-import cleancode.minesweeper.tobe.minesweeper.io.OutputHandler;
-import cleancode.minesweeper.tobe.minesweeper.user.UserAction;
+import hello.kotlinboard.minesweeper.board.GameBoard;
+import hello.kotlinboard.minesweeper.board.position.CellPosition;
+import hello.kotlinboard.minesweeper.config.GameConfig;
+import hello.kotlinboard.minesweeper.exception.GameException;
+import hello.kotlinboard.minesweeper.io.InputHandler;
+import hello.kotlinboard.minesweeper.io.OutputHandler;
+import hello.kotlinboard.minesweeper.user.UserAction;
 
 public class Minesweeper implements GameInitializable, GameRunnable {
 

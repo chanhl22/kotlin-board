@@ -1,7 +1,7 @@
 package hello.kotlinboard.minesweeper.io;
 
-import cleancode.minesweeper.tobe.minesweeper.board.position.CellPosition;
-import cleancode.minesweeper.tobe.minesweeper.user.UserAction;
+import hello.kotlinboard.minesweeper.board.position.CellPosition;
+import hello.kotlinboard.minesweeper.user.UserAction;
 
 public interface InputHandler {
 

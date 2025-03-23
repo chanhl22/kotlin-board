@@ -1,6 +1,6 @@
 package hello.kotlinboard.minesweeper.io;
 
-import cleancode.minesweeper.tobe.minesweeper.exception.GameException;
+import hello.kotlinboard.minesweeper.exception.GameException;
 
 public class BoardIndexConverter {
 

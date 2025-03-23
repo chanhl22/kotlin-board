@@ -1,10 +1,10 @@
 package hello.kotlinboard.minesweeper.io;
 
-import cleancode.minesweeper.tobe.minesweeper.board.GameBoard;
-import cleancode.minesweeper.tobe.minesweeper.board.cell.CellSnapshot;
-import cleancode.minesweeper.tobe.minesweeper.board.position.CellPosition;
-import cleancode.minesweeper.tobe.minesweeper.exception.GameException;
-import cleancode.minesweeper.tobe.minesweeper.io.sign.CellSignProvider;
+import hello.kotlinboard.minesweeper.board.GameBoard;
+import hello.kotlinboard.minesweeper.board.cell.CellSnapshot;
+import hello.kotlinboard.minesweeper.board.position.CellPosition;
+import hello.kotlinboard.minesweeper.exception.GameException;
+import hello.kotlinboard.minesweeper.io.sign.CellSignProvider;
 
 import java.util.List;
 import java.util.Objects;

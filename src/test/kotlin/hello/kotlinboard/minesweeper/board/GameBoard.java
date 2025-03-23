@@ -1,15 +1,15 @@
 package hello.kotlinboard.minesweeper.board;
 
-import cleancode.minesweeper.tobe.minesweeper.board.cell.Cell;
-import cleancode.minesweeper.tobe.minesweeper.board.cell.CellSnapshot;
-import cleancode.minesweeper.tobe.minesweeper.board.cell.Cells;
-import cleancode.minesweeper.tobe.minesweeper.board.cell.EmptyCell;
-import cleancode.minesweeper.tobe.minesweeper.board.cell.LandMineCell;
-import cleancode.minesweeper.tobe.minesweeper.board.cell.NumberCell;
-import cleancode.minesweeper.tobe.minesweeper.board.position.CellPosition;
-import cleancode.minesweeper.tobe.minesweeper.board.position.CellPositions;
-import cleancode.minesweeper.tobe.minesweeper.board.position.RelativePosition;
-import cleancode.minesweeper.tobe.minesweeper.gamelevel.GameLevel;
+import hello.kotlinboard.minesweeper.board.cell.Cell;
+import hello.kotlinboard.minesweeper.board.cell.CellSnapshot;
+import hello.kotlinboard.minesweeper.board.cell.Cells;
+import hello.kotlinboard.minesweeper.board.cell.EmptyCell;
+import hello.kotlinboard.minesweeper.board.cell.LandMineCell;
+import hello.kotlinboard.minesweeper.board.cell.NumberCell;
+import hello.kotlinboard.minesweeper.board.position.CellPosition;
+import hello.kotlinboard.minesweeper.board.position.CellPositions;
+import hello.kotlinboard.minesweeper.board.position.RelativePosition;
+import hello.kotlinboard.minesweeper.gamelevel.GameLevel;
 
 import java.util.Deque;
 import java.util.LinkedList;

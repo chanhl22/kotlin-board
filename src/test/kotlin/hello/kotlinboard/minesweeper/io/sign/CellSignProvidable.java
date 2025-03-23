@@ -1,6 +1,6 @@
 package hello.kotlinboard.minesweeper.io.sign;
 
-import cleancode.minesweeper.tobe.minesweeper.board.cell.CellSnapshot;
+import hello.kotlinboard.minesweeper.board.cell.CellSnapshot;
 
 public interface CellSignProvidable {
 

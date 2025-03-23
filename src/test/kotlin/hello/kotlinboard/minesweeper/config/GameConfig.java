@@ -1,8 +1,8 @@
 package hello.kotlinboard.minesweeper.config;
 
-import cleancode.minesweeper.tobe.minesweeper.gamelevel.GameLevel;
-import cleancode.minesweeper.tobe.minesweeper.io.InputHandler;
-import cleancode.minesweeper.tobe.minesweeper.io.OutputHandler;
+import hello.kotlinboard.minesweeper.gamelevel.GameLevel;
+import hello.kotlinboard.minesweeper.io.InputHandler;
+import hello.kotlinboard.minesweeper.io.OutputHandler;
 
 public class GameConfig {
 

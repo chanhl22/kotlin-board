@@ -1,6 +1,6 @@
 package hello.kotlinboard.minesweeper.board.position;
 
-import cleancode.minesweeper.tobe.minesweeper.board.cell.Cell;
+import hello.kotlinboard.minesweeper.board.cell.Cell;
 
 import java.util.ArrayList;
 import java.util.Collections;
