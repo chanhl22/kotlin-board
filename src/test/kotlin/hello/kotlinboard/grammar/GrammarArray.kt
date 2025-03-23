@@ -26,6 +26,42 @@ class GrammarArray {
         print(anyArr[1])
         assertThat(anyArr).hasSize(4)
             .contains(1, "awd", 3.2, 4)
+
+
+        val array1 = Array(3, { i -> i })
+        assertThat(array1[0]).isEqualTo(0)
+        assertThat(array1[1]).isEqualTo(1)
+        assertThat(array1[2]).isEqualTo(2)
+
+        val array2 = Array(3, { _ -> 0 })
+        assertThat(array2[0]).isEqualTo(0)
+        assertThat(array2[1]).isEqualTo(0)
+        assertThat(array2[2]).isEqualTo(0)
+
+        val array3 = Array(3, { 0 })
+        assertThat(array3[0]).isEqualTo(0)
+        assertThat(array3[1]).isEqualTo(0)
+        assertThat(array3[2]).isEqualTo(0)
+
+        val array4 = Array(3) { 0 }
+        assertThat(array4[0]).isEqualTo(0)
+        assertThat(array4[1]).isEqualTo(0)
+        assertThat(array4[2]).isEqualTo(0)
+    }
+
+    @DisplayName("2차원 배열")
+    @Test
+    fun createArray2() {
+        //2차원 배열 선언
+        val array = Array(3) { IntArray(size = 3, init = { i -> i } ) }
+
+        //출력값
+        for ((i, row) in array.withIndex()){
+            for ((j,column) in row.withIndex()){
+                print("[$i,$j] => $column\t")
+            }
+            println()
+        }
     }
 
 }
