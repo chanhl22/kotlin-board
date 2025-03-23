@@ -67,11 +67,11 @@ class GrammarClass {
 
 }
 
-class Person1(val name: String, var age: Int) {
+private class Person1(val name: String, var age: Int) {
     // 클래스 본체
 }
 
-class Person2(name: String, age: Int) {
+private class Person2(name: String, age: Int) {
     var name = "spring"
     var age = 10
 
@@ -89,11 +89,11 @@ class Person2(name: String, age: Int) {
     }
 }
 
-class Person3 constructor(val name: String, var age: Int) {
+private class Person3 constructor(val name: String, var age: Int) {
     // 클래스 본체
 }
 
-class Person4 {
+private class Person4 {
     var name: String = "spring"
     var age: Int = 10
 
@@ -103,13 +103,13 @@ class Person4 {
     }
 }
 
-class Prs(var name: String, var birth: Int) {
+private class Prs(var name: String, var birth: Int) {
     fun addAge() {
         birth++
     }
 }
 
-class Character(name: String, hairColor: String, height: Double) {
+private class Character(name: String, hairColor: String, height: Double) {
     var name: String = ""
     var hairColor: String = ""
     var height: Double = 0.0
