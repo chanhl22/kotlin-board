@@ -4,13 +4,14 @@ import hello.kotlinboard.domain.user.User
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import org.mockito.ArgumentMatchers.any
+import org.mockito.ArgumentMatchers
 import org.mockito.BDDMockito
 import org.mockito.InjectMocks
 import org.mockito.Mock
 import org.mockito.Mockito
 import org.mockito.Mockito.times
 import org.mockito.junit.jupiter.MockitoExtension
+import org.mockito.kotlin.any
 
 @ExtendWith(MockitoExtension::class)
 class BoardServiceTest {
@@ -29,16 +30,19 @@ class BoardServiceTest {
         val board = Board(1L, "테스트 게시판")
 
         //any(...) must not be null
-//        BDDMockito.given(boardRepository.save(any()))
+//        BDDMockito.given(boardRepository.save(ArgumentMatchers.any()))
 //            .willReturn(board)
 
         //any(...) must not be null
-//        BDDMockito.given(boardRepository.save(any(Board::class.java)))
+//        BDDMockito.given(boardRepository.save(ArgumentMatchers.any(Board::class.java)))
 //            .willReturn(board)
 
         //Strict stubbing argument mismatch.
 //        BDDMockito.given(boardRepository.save(board))
 //            .willReturn(board)
+
+        BDDMockito.given(boardRepository.save(any()))
+            .willReturn(board)
 
         //when
         boardService.create(user)
